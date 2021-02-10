@@ -4,11 +4,75 @@
     <head>
         <title>Hello</title>
         <link rel="stylesheet" href="index.css">
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        
+        <nav>
+            <!-- Links -->
+            <div id="links">
+
+                <a href="#" class="link">
+                    <div>
+                        <img src="icons/home-solid.svg" alt="">
+                        <p>Home</p>
+                    </div>
+                </a>
+                
+                <div class="link dropdown-link">
+                    <div>
+                        <img src="icons/tags-solid.svg" alt="">
+                        <p>Products</p>
+
+                        <div class="dropdown">
+                            <p class="dropdown-inner-link">Products 1</p>
+                            <p class="dropdown-inner-link">Products 2</p>
+                            <p class="dropdown-inner-link">Products 3</p>                    
+                        </div>
+
+                        <img src="icons/arrow-donw.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+
+                <div class="link dropdown-link">
+                    <div>
+                        <img src="icons/cogs-solid.svg" alt="">
+                        <p>Services</p>
+
+                        <div class="dropdown">
+                            <p class="dropdown-inner-link">Services 1</p>
+                            <p class="dropdown-inner-link">Services 2</p>
+                            <p class="dropdown-inner-link">Services 3</p>
+                        </div>
+
+                        <img src="icons/arrow-donw.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+
+                <a href="#" class="link">
+                <div>
+                        <img src="icons/info-circle-solid.svg" alt="">
+                        <p>About</p>
+                </div>
+                </a>
+
+                <a href="#" class="link">
+                    <div>
+                        <img src="icons/phone-alt-solid.svg" alt="">
+                        <p>Contact</p>
+                    </div>
+                </a>
+            </div>
+
+            <form action="#" method="POST" id="search">
+                <input type="text" id="search-input" name="search" placeholder="Search">
+                <button type="submit" id="search-button"><img src="icons/search-solid.svg" alt=""></button>
+            </form>
+        </nav>
     </body>
 
-    <script src="index.jss"></script>
+    <script src="index.js"></script>
 </html>
