@@ -1,0 +1,31 @@
+:root{
+    --ripple-animation-time: 0.5s;
+}
+
+.ripple{
+    animation: ripple var(--ripple-animation-time) 0s forwards;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+@keyframes ripple{
+    0%{
+        background-color: rgba(255, 255, 255, 0.233);
+    }
+
+    70%{
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+
+    100%{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
