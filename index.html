@@ -3,66 +3,78 @@
 <html>
     <head>
         <title>Hello</title>
+        <meta name="viewport" content="width= device-width, initial-scale= 1.0">
         <link rel="stylesheet" href="index.css">
-        
+        <link rel="stylesheet" href="animations.css">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <nav>
-            <!-- Links -->
-            <div id="links">
+        <nav id="nav">
+            <div id="mobile-nav">
+                <a href="#" >
+                    <img src="icons/home-solid.svg" alt="" style="width: 25px;">
+                </a>
+                
+                <div id="mobile-menu-btn">
+                    <img src="icons/menu.svg" alt="">
+                </div>
+            </div>
 
+            <!-- Links -->
+            <div id="link-container">
+                <!-- link-content is for text grow effect from left bottom -->
                 <a href="#" class="link">
-                    <div>
-                        <img src="icons/home-solid.svg" alt="">
-                        <p>Home</p>
+                    <div class="link-content">
+                        <img class="link-icon" src="icons/home-solid.svg" alt="">
+                        <p class="link-text">Home</p>
                     </div>
                 </a>
                 
-                <div class="link dropdown-link">
-                    <div>
-                        <img src="icons/tags-solid.svg" alt="">
-                        <p>Products</p>
-
-                        <div class="dropdown">
-                            <p class="dropdown-inner-link">Products 1</p>
-                            <p class="dropdown-inner-link">Products 2</p>
-                            <p class="dropdown-inner-link">Products 3</p>                    
+                <div class="dropdown-link">
+                    <div class="dropdown-content">
+                        <div class="link-content">
+                            <img class="link-icon" src="icons/tags-solid.svg" alt="">
+                            <span class="link-text">Products</span>
                         </div>
-
                         <img src="icons/arrow-donw.svg" alt="" class="dropdown-arrow">
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-menu-link">Products 1</a>
+                        <a class="dropdown-menu-link">Products 2</a>
+                        <a class="dropdown-menu-link">Products 3</a>               
                     </div>
                 </div>
 
-                <div class="link dropdown-link">
-                    <div>
-                        <img src="icons/cogs-solid.svg" alt="">
-                        <p>Services</p>
-
-                        <div class="dropdown">
-                            <p class="dropdown-inner-link">Services 1</p>
-                            <p class="dropdown-inner-link">Services 2</p>
-                            <p class="dropdown-inner-link">Services 3</p>
+                <div class="dropdown-link">
+                    <div class="dropdown-content">
+                        <div class="link-content">
+                            <img class="link-icon" src="icons/cogs-solid.svg" alt="">
+                            <span class="link-text">Services</span>
                         </div>
-
                         <img src="icons/arrow-donw.svg" alt="" class="dropdown-arrow">
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-menu-link">Services 1</a>
+                        <a class="dropdown-menu-link">Services 2</a>
+                        <a class="dropdown-menu-link">Services 3</a>
                     </div>
                 </div>
 
                 <a href="#" class="link">
-                <div>
-                        <img src="icons/info-circle-solid.svg" alt="">
-                        <p>About</p>
-                </div>
+                    <div class="link-content">
+                        <img class="link-icon" src="icons/info-circle-solid.svg" alt="">
+                        <p class="link-text">About</p>
+                    </div>
                 </a>
 
                 <a href="#" class="link">
-                    <div>
-                        <img src="icons/phone-alt-solid.svg" alt="">
-                        <p>Contact</p>
+                    <div class="link-content">
+                        <img class="link-icon" src="icons/phone-alt-solid.svg" alt="">
+                        <p class="link-text">Contact</p>
                     </div>
                 </a>
             </div>
@@ -72,6 +84,7 @@
                 <button type="submit" id="search-button"><img src="icons/search-solid.svg" alt=""></button>
             </form>
         </nav>
+
     </body>
 
     <script src="index.js"></script>
