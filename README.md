@@ -8,8 +8,9 @@ this is a test repository that i created to learn how to use git and github
 - How to push a git repository to github
 - How to stage files
 - How to make a commit in a git repository
-- How to make a new branch
+- How to create a new branch
 - How to change branches
+- How to merge branches
 - How to revert repository
 - How to create a pull request on github
 - How to pull updates from github to local git repository
